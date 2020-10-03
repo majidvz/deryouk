@@ -26,3 +26,40 @@ hr {
   height: 1px;
   border-radius: 0.5px;
 }
+
+.btn-modal-login {
+  background: url(/icon/modal-login.png) no-repeat left center;
+  background-size: 16px 16px !important;
+}
+
+.modal-backdrop {
+  background-color: #244497;
+}
+
+.modal {
+  .modal-content {
+    border-radius: 8px;
+  }
+
+  .btn-login {
+    background: url(/icon/login-with-email.png) no-repeat right center;
+    background-size: 16px 16px !important;
+    padding-right: 26px;
+  }
+}
+
+.add-passenger {
+  border: 1px solid #dde2ee63;
+  border-radius: 6px;
+  height: 60px;
+
+  .increase {
+    padding-right: 60px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 6px;
+    font-size: 2em;
+    background: $primary;
+  }
+}

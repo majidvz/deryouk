@@ -81,5 +81,64 @@
         background: url(/icon/person.png) no-repeat center, #fff;
       }
     }
+
+    &.passengers-info {
+      .icon {
+        background-size: 17px 18px !important;
+        background: url(/icon/passengers-info.png) no-repeat center, #fff;
+      }
+    }
+  }
+
+  .tickets {
+    .origin {
+      background: url(/icon/airplan.png) no-repeat center;
+      background-size: 20px 17px !important;
+    }
+
+    .info {
+      .i-content {
+        &:first-child {
+          border-radius: 0 13px 13px 0;
+          border: 1px solid #dde2ee;
+        }
+        &:last-child {
+          border-radius: 13px 0 0 13px;
+          border: 1px solid #dde2ee;
+          border-right: none;
+        }
+      }
+    }
+
+    .price {
+      font-size: 2em;
+    }
+  }
+}
+
+@media only screen and (max-width: 991.99px) {
+  .confirmation {
+    .tickets {
+      & > .t-content {
+        padding-right: 0;
+        padding-left: 0;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .confirmation {
+    .tickets {
+      & > .t-content {
+        &:first-child {
+          padding-right: 0;
+        }
+
+        &:last-child {
+          padding-left: 0;
+        }
+      }
+    }
   }
 }

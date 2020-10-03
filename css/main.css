@@ -25,6 +25,39 @@ hr {
   border-radius: 0.5px;
 }
 
+.btn-modal-login {
+  background: url(/icon/modal-login.png) no-repeat left center;
+  background-size: 16px 16px !important;
+}
+
+.modal-backdrop {
+  background-color: #244497;
+}
+
+.modal .modal-content {
+  border-radius: 8px;
+}
+.modal .btn-login {
+  background: url(/icon/login-with-email.png) no-repeat right center;
+  background-size: 16px 16px !important;
+  padding-right: 26px;
+}
+
+.add-passenger {
+  border: 1px solid #dde2ee63;
+  border-radius: 6px;
+  height: 60px;
+}
+.add-passenger .increase {
+  padding-right: 60px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 6px;
+  font-size: 2em;
+  background: #244497;
+}
+
 @font-face {
   font-family: iransans-regular;
   src: url(/fonts/iransans-regular.woff);
@@ -74,6 +107,9 @@ p.fs-l {
 }
 .c-success {
   color: #389d4e !important;
+}
+.c-primary {
+  color: #244497 !important;
 }
 
 .btn-warning {
@@ -214,6 +250,52 @@ fieldset[disabled] .btn-success.active {
   background-color: #ffffff !important;
 }
 
+.btn-primary {
+  color: #ffffff !important;
+  background-color: #2449a0 !important;
+  border-color: #2449a0 !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  color: #ffffff !important;
+  background-color: #2449a0 !important;
+  border-color: #2449a0 !important;
+}
+
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  background-image: none !important;
+}
+
+.btn-primary.disabled,
+.btn-primary[disabled],
+fieldset[disabled] .btn-primary,
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled:active,
+.btn-primary[disabled]:active,
+fieldset[disabled] .btn-primary:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary.active {
+  background-color: #2449a0 !important;
+  border-color: #2449a0 !important;
+}
+
+.btn-primary .badge {
+  color: #2449a0 !important;
+  background-color: #ffffff !important;
+}
+
 .g-intro {
   min-height: 300px;
   background: linear-gradient(39deg, #143080, #2449a1);
@@ -323,7 +405,41 @@ fieldset[disabled] .btn-success.active {
   background-size: 15px 16px !important;
   background: url(/icon/person.png) no-repeat center, #fff;
 }
+.confirmation .table-temp.passengers-info .icon {
+  background-size: 17px 18px !important;
+  background: url(/icon/passengers-info.png) no-repeat center, #fff;
+}
+.confirmation .tickets .origin {
+  background: url(/icon/airplan.png) no-repeat center;
+  background-size: 20px 17px !important;
+}
+.confirmation .tickets .info .i-content:first-child {
+  border-radius: 0 13px 13px 0;
+  border: 1px solid #dde2ee;
+}
+.confirmation .tickets .info .i-content:last-child {
+  border-radius: 13px 0 0 13px;
+  border: 1px solid #dde2ee;
+  border-right: none;
+}
+.confirmation .tickets .price {
+  font-size: 2em;
+}
 
+@media only screen and (max-width: 991.99px) {
+  .confirmation .tickets > .t-content {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .confirmation .tickets > .t-content:first-child {
+    padding-right: 0;
+  }
+  .confirmation .tickets > .t-content:last-child {
+    padding-left: 0;
+  }
+}
 .g-footer .companies {
   background: url(/img/companies.png) no-repeat center;
   background-size: 100% auto !important;

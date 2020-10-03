@@ -1,0 +1,57 @@
+@include font($ir-r);
+@include font($ir-b);
+
+.ir- {
+  &r {
+    font-family: $ir-r !important;
+  }
+  &b {
+    font-family: $ir-b !important;
+  }
+}
+
+.fs- {
+  &s {
+    font-size: 0.9em !important;
+  }
+
+  &m {
+    font-size: 1em !important;
+  }
+
+  &l {
+    font-size: 1.2em !important;
+  }
+}
+
+p.fs- {
+  &s {
+    @include line-height(0.9em);
+  }
+
+  &m {
+    @include line-height(1em);
+  }
+
+  &l {
+    @include line-height(1.2em);
+  }
+}
+
+.c- {
+  &dark {
+    color: #202020 !important;
+  }
+
+  &grey {
+    color: #a6a6a6 !important;
+  }
+
+  &warning {
+    color: $warning !important;
+  }
+
+  &success {
+    color: $success !important;
+  }
+}

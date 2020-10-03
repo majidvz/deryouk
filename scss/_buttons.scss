@@ -1,0 +1,137 @@
+.btn-warning {
+  color: #ffffff !important;
+  background-color: $warning !important;
+  border-color: $warning !important;
+}
+
+.btn-warning:hover,
+.btn-warning:focus,
+.btn-warning:active,
+.btn-warning.active,
+.open .dropdown-toggle.btn-warning {
+  color: #ffffff !important ;
+  background-color: #f5b400 !important;
+  border-color: $warning !important;
+}
+
+.btn-warning:active,
+.btn-warning.active,
+.open .dropdown-toggle.btn-warning {
+  background-image: none !important;
+}
+
+.btn-warning.disabled,
+.btn-warning[disabled],
+fieldset[disabled] .btn-warning,
+.btn-warning.disabled:hover,
+.btn-warning[disabled]:hover,
+fieldset[disabled] .btn-warning:hover,
+.btn-warning.disabled:focus,
+.btn-warning[disabled]:focus,
+fieldset[disabled] .btn-warning:focus,
+.btn-warning.disabled:active,
+.btn-warning[disabled]:active,
+fieldset[disabled] .btn-warning:active,
+.btn-warning.disabled.active,
+.btn-warning[disabled].active,
+fieldset[disabled] .btn-warning.active {
+  background-color: $warning !important;
+  border-color: $warning !important;
+}
+
+.btn-warning .badge {
+  color: $warning !important;
+  background-color: #ffffff !important;
+}
+
+.btn-outline-warning {
+  color: $warning !important;
+  background-color: transparent !important;
+  border-color: $warning !important;
+}
+
+.btn-outline-warning:hover,
+.btn-outline-warning:focus,
+.btn-outline-warning:active,
+.btn-outline-warning.active,
+.open .dropdown-toggle.btn-outline-warning {
+  color: $warning !important;
+  background-color: transparent !important;
+  border-color: $warning !important;
+}
+
+.btn-outline-warning:active,
+.btn-outline-warning.active,
+.open .dropdown-toggle.btn-outline-warning {
+  background-image: none !important;
+}
+
+.btn-outline-warning.disabled,
+.btn-outline-warning[disabled],
+fieldset[disabled] .btn-outline-warning,
+.btn-outline-warning.disabled:hover,
+.btn-outline-warning[disabled]:hover,
+fieldset[disabled] .btn-outline-warning:hover,
+.btn-outline-warning.disabled:focus,
+.btn-outline-warning[disabled]:focus,
+fieldset[disabled] .btn-outline-warning:focus,
+.btn-outline-warning.disabled:active,
+.btn-outline-warning[disabled]:active,
+fieldset[disabled] .btn-outline-warning:active,
+.btn-outline-warning.disabled.active,
+.btn-outline-warning[disabled].active,
+fieldset[disabled] .btn-outline-warning.active {
+  background-color: transparent !important;
+  border-color: $warning !important;
+}
+
+.btn-outline-warning .badge {
+  color: transparent !important;
+  background-color: $warning !important;
+}
+
+.btn-success {
+  color: #ffffff !important;
+  background-color: #389d4e !important;
+  border-color: #389d4e !important;
+}
+
+.btn-success:hover,
+.btn-success:focus,
+.btn-success:active,
+.btn-success.active,
+.open .dropdown-toggle.btn-success {
+  color: #ffffff !important;
+  background-color: #389d4e !important;
+  border-color: #389d4e !important;
+}
+
+.btn-success:active,
+.btn-success.active,
+.open .dropdown-toggle.btn-success {
+  background-image: none !important;
+}
+
+.btn-success.disabled,
+.btn-success[disabled],
+fieldset[disabled] .btn-success,
+.btn-success.disabled:hover,
+.btn-success[disabled]:hover,
+fieldset[disabled] .btn-success:hover,
+.btn-success.disabled:focus,
+.btn-success[disabled]:focus,
+fieldset[disabled] .btn-success:focus,
+.btn-success.disabled:active,
+.btn-success[disabled]:active,
+fieldset[disabled] .btn-success:active,
+.btn-success.disabled.active,
+.btn-success[disabled].active,
+fieldset[disabled] .btn-success.active {
+  background-color: #389d4e !important;
+  border-color: #389d4e !important;
+}
+
+.btn-success .badge {
+  color: #389d4e !important;
+  background-color: #ffffff !important;
+}

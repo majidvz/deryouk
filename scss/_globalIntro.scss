@@ -1,0 +1,64 @@
+.g-intro {
+  min-height: 300px;
+  background: $bg-intro;
+
+  .header {
+    background: $bg-intro;
+
+    .phone {
+      background: url(/icon/phone.png) no-repeat left center;
+      background-size: 16px 16px !important;
+      line-height: 56px;
+      padding-left: 26px !important;
+    }
+  }
+
+  .search-box {
+    margin-top: 106px;
+
+    .nav-link {
+      transition: 0.3s;
+      color: #9da7c0;
+      &.active {
+        color: #fff;
+      }
+
+      &:focus {
+        outline: 0;
+      }
+    }
+
+    .content {
+      border-radius: 8px;
+    }
+
+    .f-label {
+      color: #a6a6a6;
+    }
+
+    .btn-search {
+      background: url(/icon/search.png) no-repeat center;
+      background-size: 19px 19px !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 991.99px) {
+  .g-intro {
+    .border-left {
+      border-left: none !important;
+    }
+
+    .btn-warning {
+      height: 50px !important;
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .g-intro {
+    .border-left {
+      border-left: 1px solid #dde2ee;
+    }
+  }
+}

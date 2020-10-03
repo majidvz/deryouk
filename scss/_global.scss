@@ -1,0 +1,28 @@
+html,
+body {
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: $bg-body;
+}
+
+.srounded- {
+  &m {
+    border-radius: 13px !important;
+  }
+}
+
+.sshadow {
+  box-shadow: 8px 21px 30px 0 #dfe7f447;
+}
+
+hr {
+  background: #e7eaf0;
+  height: 1px;
+  border-radius: 0.5px;
+}

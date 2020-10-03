@@ -1,0 +1,367 @@
+html,
+body {
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f4f5fa;
+}
+
+.srounded-m {
+  border-radius: 13px !important;
+}
+
+.sshadow {
+  box-shadow: 8px 21px 30px 0 #dfe7f447;
+}
+
+hr {
+  background: #e7eaf0;
+  height: 1px;
+  border-radius: 0.5px;
+}
+
+@font-face {
+  font-family: iransans-regular;
+  src: url(/fonts/iransans-regular.woff);
+}
+@font-face {
+  font-family: iransans-bold;
+  src: url(/fonts/iransans-bold.woff);
+}
+.ir-r {
+  font-family: iransans-regular !important;
+}
+.ir-b {
+  font-family: iransans-bold !important;
+}
+
+.fs-s {
+  font-size: 0.9em !important;
+}
+.fs-m {
+  font-size: 1em !important;
+}
+.fs-l {
+  font-size: 1.2em !important;
+}
+
+p.fs-s {
+  font-size: 0.9em;
+  line-height: 1.44em;
+}
+p.fs-m {
+  font-size: 1em;
+  line-height: 1.6em;
+}
+p.fs-l {
+  font-size: 1.2em;
+  line-height: 1.92em;
+}
+
+.c-dark {
+  color: #202020 !important;
+}
+.c-grey {
+  color: #a6a6a6 !important;
+}
+.c-warning {
+  color: #fcb803 !important;
+}
+.c-success {
+  color: #389d4e !important;
+}
+
+.btn-warning {
+  color: #ffffff !important;
+  background-color: #fcb803 !important;
+  border-color: #fcb803 !important;
+}
+
+.btn-warning:hover,
+.btn-warning:focus,
+.btn-warning:active,
+.btn-warning.active,
+.open .dropdown-toggle.btn-warning {
+  color: #ffffff !important;
+  background-color: #f5b400 !important;
+  border-color: #fcb803 !important;
+}
+
+.btn-warning:active,
+.btn-warning.active,
+.open .dropdown-toggle.btn-warning {
+  background-image: none !important;
+}
+
+.btn-warning.disabled,
+.btn-warning[disabled],
+fieldset[disabled] .btn-warning,
+.btn-warning.disabled:hover,
+.btn-warning[disabled]:hover,
+fieldset[disabled] .btn-warning:hover,
+.btn-warning.disabled:focus,
+.btn-warning[disabled]:focus,
+fieldset[disabled] .btn-warning:focus,
+.btn-warning.disabled:active,
+.btn-warning[disabled]:active,
+fieldset[disabled] .btn-warning:active,
+.btn-warning.disabled.active,
+.btn-warning[disabled].active,
+fieldset[disabled] .btn-warning.active {
+  background-color: #fcb803 !important;
+  border-color: #fcb803 !important;
+}
+
+.btn-warning .badge {
+  color: #fcb803 !important;
+  background-color: #ffffff !important;
+}
+
+.btn-outline-warning {
+  color: #fcb803 !important;
+  background-color: transparent !important;
+  border-color: #fcb803 !important;
+}
+
+.btn-outline-warning:hover,
+.btn-outline-warning:focus,
+.btn-outline-warning:active,
+.btn-outline-warning.active,
+.open .dropdown-toggle.btn-outline-warning {
+  color: #fcb803 !important;
+  background-color: transparent !important;
+  border-color: #fcb803 !important;
+}
+
+.btn-outline-warning:active,
+.btn-outline-warning.active,
+.open .dropdown-toggle.btn-outline-warning {
+  background-image: none !important;
+}
+
+.btn-outline-warning.disabled,
+.btn-outline-warning[disabled],
+fieldset[disabled] .btn-outline-warning,
+.btn-outline-warning.disabled:hover,
+.btn-outline-warning[disabled]:hover,
+fieldset[disabled] .btn-outline-warning:hover,
+.btn-outline-warning.disabled:focus,
+.btn-outline-warning[disabled]:focus,
+fieldset[disabled] .btn-outline-warning:focus,
+.btn-outline-warning.disabled:active,
+.btn-outline-warning[disabled]:active,
+fieldset[disabled] .btn-outline-warning:active,
+.btn-outline-warning.disabled.active,
+.btn-outline-warning[disabled].active,
+fieldset[disabled] .btn-outline-warning.active {
+  background-color: transparent !important;
+  border-color: #fcb803 !important;
+}
+
+.btn-outline-warning .badge {
+  color: transparent !important;
+  background-color: #fcb803 !important;
+}
+
+.btn-success {
+  color: #ffffff !important;
+  background-color: #389d4e !important;
+  border-color: #389d4e !important;
+}
+
+.btn-success:hover,
+.btn-success:focus,
+.btn-success:active,
+.btn-success.active,
+.open .dropdown-toggle.btn-success {
+  color: #ffffff !important;
+  background-color: #389d4e !important;
+  border-color: #389d4e !important;
+}
+
+.btn-success:active,
+.btn-success.active,
+.open .dropdown-toggle.btn-success {
+  background-image: none !important;
+}
+
+.btn-success.disabled,
+.btn-success[disabled],
+fieldset[disabled] .btn-success,
+.btn-success.disabled:hover,
+.btn-success[disabled]:hover,
+fieldset[disabled] .btn-success:hover,
+.btn-success.disabled:focus,
+.btn-success[disabled]:focus,
+fieldset[disabled] .btn-success:focus,
+.btn-success.disabled:active,
+.btn-success[disabled]:active,
+fieldset[disabled] .btn-success:active,
+.btn-success.disabled.active,
+.btn-success[disabled].active,
+fieldset[disabled] .btn-success.active {
+  background-color: #389d4e !important;
+  border-color: #389d4e !important;
+}
+
+.btn-success .badge {
+  color: #389d4e !important;
+  background-color: #ffffff !important;
+}
+
+.g-intro {
+  min-height: 300px;
+  background: linear-gradient(39deg, #143080, #2449a1);
+}
+.g-intro .header {
+  background: linear-gradient(39deg, #143080, #2449a1);
+}
+.g-intro .header .phone {
+  background: url(/icon/phone.png) no-repeat left center;
+  background-size: 16px 16px !important;
+  line-height: 56px;
+  padding-left: 26px !important;
+}
+.g-intro .search-box {
+  margin-top: 106px;
+}
+.g-intro .search-box .nav-link {
+  transition: 0.3s;
+  color: #9da7c0;
+}
+.g-intro .search-box .nav-link.active {
+  color: #fff;
+}
+.g-intro .search-box .nav-link:focus {
+  outline: 0;
+}
+.g-intro .search-box .content {
+  border-radius: 8px;
+}
+.g-intro .search-box .f-label {
+  color: #a6a6a6;
+}
+.g-intro .search-box .btn-search {
+  background: url(/icon/search.png) no-repeat center;
+  background-size: 19px 19px !important;
+}
+
+@media only screen and (max-width: 991.99px) {
+  .g-intro .border-left {
+    border-left: none !important;
+  }
+  .g-intro .btn-warning {
+    height: 50px !important;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .g-intro .border-left {
+    border-left: 1px solid #dde2ee;
+  }
+}
+.confirmation .steps .s-item {
+  background: #f0f0f0;
+  height: 50px;
+  border-radius: 25px;
+  padding: 5px;
+}
+.confirmation .steps .s-item .num {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  line-height: 40px;
+}
+.confirmation .steps .s-item .s-text {
+  color: #a6a6a6;
+}
+.confirmation .steps .s-item.active {
+  background: #224396;
+}
+.confirmation .steps .s-item.active .num {
+  color: #224396 !important;
+}
+.confirmation .steps .s-item.active .s-text {
+  color: #fff;
+}
+.confirmation .warning {
+  border: 1px solid #fcb803;
+}
+.confirmation .table-temp .header .icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 17px;
+  box-shadow: 8px 21px 30px 0 #dfe7f447;
+}
+.confirmation .table-temp .header .texts {
+  width: calc(100% - 54px);
+}
+.confirmation .table-temp .content .title {
+  width: 40px;
+  height: 100%;
+}
+.confirmation .table-temp .content .title .t-text {
+  transform: rotate(90deg);
+  color: #244497;
+}
+.confirmation .table-temp .content .table-content {
+  border: 1px solid #dde2ee;
+  border-radius: 13px;
+}
+.confirmation .table-temp .content:not(.requester) .table-content {
+  width: calc(100% - 40px);
+}
+.confirmation .table-temp.ticket-info .icon {
+  background-size: 18px 17px !important;
+  background: url(/icon/ticket-info.png) no-repeat center, #fff;
+}
+.confirmation .table-temp.requester .icon {
+  background-size: 15px 16px !important;
+  background: url(/icon/person.png) no-repeat center, #fff;
+}
+
+.g-footer .companies {
+  background: url(/img/companies.png) no-repeat center;
+  background-size: 100% auto !important;
+  height: 100px;
+}
+.g-footer .tours h3 {
+  color: #202020;
+}
+.g-footer .tours .t-link {
+  text-decoration: none;
+  color: #a6a6a6;
+  transition: 0.3s;
+}
+.g-footer .tours .t-link:hover {
+  color: #202020;
+}
+.g-footer .social {
+  width: 240px;
+}
+.g-footer .social .s-link {
+  width: 40px;
+  height: 40px;
+  background-size: 100% 100% !important;
+}
+.g-footer .social .s-link.telegram {
+  background: url(/icon/twitter.png) no-repeat center;
+}
+.g-footer .social .s-link.youtube {
+  background: url(/icon/youtube.png) no-repeat center;
+}
+.g-footer .social .s-link.linkedin {
+  background: url(/icon/linkedin.png) no-repeat center;
+}
+.g-footer .social .s-link.facebook {
+  background: url(/icon/facebook.png) no-repeat center;
+}
+.g-footer .social .s-link.twitter {
+  background: url(/icon/twitter.png) no-repeat center;
+}
+
+/*# sourceMappingURL=main.css.map */

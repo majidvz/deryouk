@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>دریوک | تایید اطلاعات</title>
+
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="./favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#ffc40d" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <link rel="stylesheet" href="/css/reset.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/spacing.min.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
+
+  <body dir="rtl">
+    <!-- Intro -->
+    <div class="g-intro container-fluid">
+      <header
+        class="header fixed-top spy-2 spx-2 spx-lg-10 d-flex justify-content-between align-items-center"
+      >
+        <a class="navbar-brand d-none d-lg-block" href="/">
+          <img src="/img/logo.png" height="56" alt="دریوک" loading="lazy" />
+        </a>
+
+        <a class="navbar-brand d-block d-lg-none" href="/">
+          <img src="/img/logo-sm.png" height="56" alt="دریوک" loading="lazy" />
+        </a>
+
+        <nav class="navbar navbar-expand-lg navbar-light d-none d-lg-block">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link py-0 spx-2 ir-r text-white" href="#"
+                  >تور مسافری</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link py-0 spx-2 ir-r text-white" href="#">هتل</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link py-0 spx-2 ir-r text-white" href="#"
+                  >درباره ما</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <nav class="navbar navbar-expand-lg navbar-light d-none d-lg-block">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link py-0 spx-2 ir-r text-white" href="#"
+                  >راهنما</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link py-0 spx-2 ir-r text-white" href="#"
+                  >درباره ما</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <div class="buttons d-flex justify-content-between">
+          <a
+            class="btn ir-r text-white phone p-0 sml-4 d-none d-lg-block"
+            href="tel:01144254500"
+            >01144254500</a
+          >
+
+          <a
+            class="btn btn-warning ir-r text-white spx-2 spy-1 d-none d-lg-flex justify-content-lg-between align-items-lg-center"
+            >حساب کاربری</a
+          >
+          <a
+            class="btn btn-warning ir-r text-white spx-2 spy-2 d-lg-none d-flex justify-content-between align-items-center"
+          >
+            <i class="fas fa-user fs-l"></i>
+          </a>
+        </div>
+      </header>
+
+      <div class="search-box spx-2 spx-lg-10 spy-5">
+        <ul class="nav nav-tabs border-bottom-0" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <a
+              class="nav-link pr-0 spb-2 spl-3 bg-transparent border-0 ir-r active"
+              id="onWay-tab"
+              data-toggle="tab"
+              href="#onWay"
+              role="tab"
+              aria-controls="onWay"
+              aria-selected="true"
+              >رفت</a
+            >
+          </li>
+          <li class="nav-item" role="presentation">
+            <a
+              class="nav-link pr-0 spb-2 spl-3 bg-transparent border-0 ir-r"
+              id="roundTrip-tab"
+              data-toggle="tab"
+              href="#roundTrip"
+              role="tab"
+              aria-controls="roundTrip"
+              aria-selected="false"
+              >رفت و برگش</a
+            >
+          </li>
+          <li class="nav-item" role="presentation">
+            <a
+              class="nav-link px-0 spb-2 bg-transparent border-0 ir-r"
+              id="multiWay-tab"
+              data-toggle="tab"
+              href="#multiWay"
+              role="tab"
+              aria-controls="multiWay"
+              aria-selected="false"
+              >چند مسیر</a
+            >
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div
+            class="tab-pane fade show active"
+            id="onWay"
+            role="tabpanel"
+            aria-labelledby="onWay-tab"
+          >
+            <form action="">
+              <div class="content sshadow row bg-white sp-2">
+                <div class="col-12 col-lg-3 smb-2 mb-lg-0 border-left">
+                  <div class="form-group mb-0">
+                    <label class="ir-r d-block text-right f-label" for="origin"
+                      >مبدا مورد نظر</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control pr-0 shadow-none border-0 ir-r"
+                      id="origin"
+                      placeholder="انتخاب شهر مبدا"
+                      list="originList"
+                    />
+
+                    <datalist id="originList">
+                      <option value="تهران">تهران</option>
+                      <option value="مازندران">ساری</option>
+                      <option value="مازندران">آمل</option>
+                      <option value="مازندران">بابل</option>
+                    </datalist>
+                  </div>
+                </div>
+
+                <div class="col-12 col-lg-3 smb-2 mb-lg-0 border-left">
+                  <div class="form-group mb-0">
+                    <label
+                      class="ir-r d-block text-right f-label"
+                      for="destination"
+                      >مقصد مورد نظر</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control pr-0 shadow-none border-0 ir-r"
+                      id="destination"
+                      placeholder="انتخاب شهر مقصد"
+                      list="destinationList"
+                    />
+
+                    <datalist id="destinationList">
+                      <option value="تهران">تهران</option>
+                      <option value="مازندران">ساری</option>
+                      <option value="مازندران">آمل</option>
+                      <option value="مازندران">بابل</option>
+                    </datalist>
+                  </div>
+                </div>
+
+                <div class="col-12 col-lg-2 smb-2 mb-lg-0 border-left">
+                  <div class="form-group mb-0">
+                    <label class="ir-r d-block text-right f-label" for="fDate"
+                      >تاریخ رفت</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control pr-0 shadow-none border-0 ir-r"
+                      id="fDate"
+                      placeholder="انتخاب تاریخ رفت"
+                    />
+                  </div>
+                </div>
+
+                <div class="col-12 col-lg-2 smb-2 mb-lg-0">
+                  <div class="form-group mb-0">
+                    <label
+                      class="ir-r d-block text-right f-label"
+                      for="passengers"
+                      >تعداد مسافران</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control pr-0 shadow-none border-0 ir-r"
+                      id="passengers"
+                      placeholder="انتخاب تعداد مسافران"
+                    />
+                  </div>
+                </div>
+
+                <div class="col-12 col-lg-2 mb-0">
+                  <button
+                    type="submit"
+                    class="btn btn-warning btn-search w-100 h-100 d-flex"
+                  ></button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="roundTrip"
+            role="tabpanel"
+            aria-labelledby="roundTrip-tab"
+          >
+            <form action="">
+              <div class="content sshadow row bg-white sp-2">
+                <div class="col-12 col-lg-3 smb-2 mb-lg-0 border-left">
+                  <div class="form-group mb-0">
+                    <label class="ir-r d-block text-right f-label" for="origin"
+                      >مبدا مورد نظر</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control pr-0 shadow-none border-0 ir-r"
+                      id="origin"
+                      placeholder="انتخاب شهر مبدا"
+                      list="originList"
+                    />
+
+                    <datalist id="originList">
+                      <option value="تهران">تهران</option>
+                      <option value="مازندران">ساری</option>
+                      <option value="مازندران">آمل</option>
+                      <option value="مازندران">بابل</option>
+                    </datalist>
+                  </div>
+                </div>
+
+                <div class="col-12 col-lg-3 smb-2 mb-lg-0 border-left">
+                  <div class="form-group mb-0">
+                    <label
+                      class="ir-r d-block text-right f-label"
+                      for="destination"
+                      >مقصد مورد نظر</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control pr-0 shadow-none border-0 ir-r"
+                      id="destination"
+                      placeholder="انتخاب شهر مقصد"
+                      list="destinationList"
+                    />
+
+                    <datalist id="destinationList">
+                      <option value="تهران">تهران</option>
+                      <option value="مازندران">ساری</option>
+                      <option value="مازندران">آمل</option>
+                      <option value="مازندران">بابل</option>
+                    </datalist>
+                  </div>
+                </div>
+
+                <div class="col-12 col-lg-2 smb-2 mb-lg-0 border-left">
+                  <div class="form-group mb-0">
+                    <label class="ir-r d-block text-right f-label" for="fDate"
+                      >تاریخ رفت</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control pr-0 shadow-none border-0 ir-r"
+                      id="fDate"
+                      placeholder="انتخاب تاریخ رفت"
+                    />
+                  </div>
+                </div>
+
+                <div class="col-12 col-lg-2 smb-2 mb-lg-0">
+                  <div class="form-group mb-0">
+                    <label
+                      class="ir-r d-block text-right f-label"
+                      for="passengers"
+                      >تعداد مسافران</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control pr-0 shadow-none border-0 ir-r"
+                      id="passengers"
+                      placeholder="انتخاب تعداد مسافران"
+                    />
+                  </div>
+                </div>
+
+                <div class="col-12 col-lg-2 mb-0">
+                  <button
+                    type="submit"
+                    class="btn btn-warning btn-search w-100 h-100 d-flex"
+                  ></button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="multiWay"
+            role="tabpanel"
+            aria-labelledby="multiWay-tab"
+          >
+            <form action="">
+              <div class="content sshadow row bg-white sp-2">
+                <div class="col-12 col-lg-3 smb-2 mb-lg-0 border-left">
+                  <div class="form-group mb-0">
+                    <label class="ir-r d-block text-right f-label" for="origin"
+                      >مبدا مورد نظر</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control pr-0 shadow-none border-0 ir-r"
+                      id="origin"
+                      placeholder="انتخاب شهر مبدا"
+                      list="originList"
+                    />
+
+                    <datalist id="originList">
+                      <option value="تهران">تهران</option>
+                      <option value="مازندران">ساری</option>
+                      <option value="مازندران">آمل</option>
+                      <option value="مازندران">بابل</option>
+                    </datalist>
+                  </div>
+                </div>
+
+                <div class="col-12 col-lg-3 smb-2 mb-lg-0 border-left">
+                  <div class="form-group mb-0">
+                    <label
+                      class="ir-r d-block text-right f-label"
+                      for="destination"
+                      >مقصد مورد نظر</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control pr-0 shadow-none border-0 ir-r"
+                      id="destination"
+                      placeholder="انتخاب شهر مقصد"
+                      list="destinationList"
+                    />
+
+                    <datalist id="destinationList">
+                      <option value="تهران">تهران</option>
+                      <option value="مازندران">ساری</option>
+                      <option value="مازندران">آمل</option>
+                      <option value="مازندران">بابل</option>
+                    </datalist>
+                  </div>
+                </div>
+
+                <div class="col-12 col-lg-2 smb-2 mb-lg-0 border-left">
+                  <div class="form-group mb-0">
+                    <label class="ir-r d-block text-right f-label" for="fDate"
+                      >تاریخ رفت</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control pr-0 shadow-none border-0 ir-r"
+                      id="fDate"
+                      placeholder="انتخاب تاریخ رفت"
+                    />
+                  </div>
+                </div>
+
+                <div class="col-12 col-lg-2 smb-2 mb-lg-0">
+                  <div class="form-group mb-0">
+                    <label
+                      class="ir-r d-block text-right f-label"
+                      for="passengers"
+                      >تعداد مسافران</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control pr-0 shadow-none border-0 ir-r"
+                      id="passengers"
+                      placeholder="انتخاب تعداد مسافران"
+                    />
+                  </div>
+                </div>
+
+                <div class="col-12 col-lg-2 mb-0">
+                  <button
+                    type="submit"
+                    class="btn btn-warning btn-search w-100 h-100 d-flex"
+                  ></button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="g-footer container-fluid spx-2 spx-lg-10 smt-10">
+      <div class="row bg-white sp-2 srounded-m sshadow smb-10">
+        <div class="companies w-100"></div>
+      </div>
+
+      <div class="tours row sp-2 sp-lg-3">
+        <div class="col-12 col-lg-9 smb-2 mb-lg-0">
+          <h3 class="d-block text-right fs-m ir-b smb-2">تورهای مسافرتی</h3>
+          <div class="row d-lg-flex justify-content-lg-between">
+            <div class="col-12 col-lg-2">
+              <a class="t-link d-block text-right ir-r smb-1" href="#">ایران</a>
+              <a class="t-link d-block text-right ir-r smb-1" href="#">ترکیه</a>
+              <a class="t-link d-block text-right ir-r smb-1" href="#"
+                >امارات</a
+              >
+              <a class="t-link d-block text-right ir-r smb-1" href="#">روسیه</a>
+              <a class="t-link d-block text-right ir-r smb-1" href="#"
+                >تایلند</a
+              >
+              <a class="t-link d-block text-right ir-r smb-1" href="#">هند</a>
+              <a class="t-link d-block text-right ir-r smb-1" href="#">مالزی</a>
+              <a class="t-link d-block text-right ir-r smb-1" href="#"
+                >بلغارستان</a
+              >
+            </div>
+
+            <div class="col-12 col-lg-2">
+              <a class="t-link d-block text-right ir-r smb-1" href="#"
+                >گرجستان</a
+              >
+              <a class="t-link d-block text-right ir-r smb-1" href="#">باکو</a>
+              <a class="t-link d-block text-right ir-r smb-1" href="#"
+                >مالدیو</a
+              >
+              <a class="t-link d-block text-right ir-r smb-1" href="#"
+                >ویتنام</a
+              >
+              <a class="t-link d-block text-right ir-r smb-1" href="#"
+                >مجارستان</a
+              >
+              <a class="t-link d-block text-right ir-r smb-1" href="#"
+                >سریلانکا</a
+              >
+              <a class="t-link d-block text-right ir-r smb-1" href="#"
+                >قبرس شمالی</a
+              >
+              <a class="t-link d-block text-right ir-r smb-1" href="#"
+                >ارمنستان</a
+              >
+            </div>
+
+            <div class="col-12 col-lg-2">
+              <a class="t-link d-block text-right ir-r smb-1" href="#">اتریش</a>
+              <a class="t-link d-block text-right ir-r smb-1" href="#">ژاپن</a>
+              <a class="t-link d-block text-right ir-r smb-1" href="#">لبنان</a>
+              <a class="t-link d-block text-right ir-r smb-1" href="#"
+                >اندونزی</a
+              >
+              <a class="t-link d-block text-right ir-r smb-1" href="#"
+                >کانادا</a
+              >
+              <a class="t-link d-block text-right ir-r smb-1" href="#"
+                >آفریقای جنوبی</a
+              >
+              <a class="t-link d-block text-right ir-r smb-1" href="#"
+                >کره جنوبی</a
+              >
+              <a class="t-link d-block text-right ir-r smb-1" href="#"
+                >استرالیا</a
+              >
+            </div>
+
+            <div class="col-12 col-lg-2">
+              <a class="t-link d-block text-right ir-r smb-1" href="#"
+                >بلاروس</a
+              >
+              <a class="t-link d-block text-right ir-r smb-1" href="#">قبرس</a>
+              <a class="t-link d-block text-right ir-r smb-1" href="#"
+                >ایتالیا</a
+              >
+              <a class="t-link d-block text-right ir-r smb-1" href="#"
+                >اسپانیا</a
+              >
+              <a class="t-link d-block text-right ir-r smb-1" href="#">موریس</a>
+              <a class="t-link d-block text-right ir-r smb-1" href="#"
+                >انگلستان</a
+              >
+              <a class="t-link d-block text-right ir-r smb-1" href="#">چین</a>
+              <a class="t-link d-block text-right ir-r smb-1" href="#">سوییس</a>
+            </div>
+
+            <div class="col-12 col-lg-2">
+              <a class="t-link d-block text-right ir-r smb-1" href="#"
+                >فرانسه</a
+              >
+              <a class="t-link d-block text-right ir-r smb-1" href="#"
+                >امریکا</a
+              >
+              <a class="t-link d-block text-right ir-r smb-1" href="#"
+                >امارات</a
+              >
+              <a class="t-link d-block text-right ir-r mb-0" href="#">برزیل</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-3 mb-0">
+          <h3 class="d-block text-right fs-m ir-b smb-2">لینک های مفید</h3>
+
+          <a class="t-link d-block text-right ir-r smb-1" href="#">رزرو هتل</a>
+          <a class="t-link d-block text-right ir-r smb-1" href="#"
+            >بلیط هواپیما</a
+          >
+          <a class="t-link d-block text-right ir-r smb-1" href="#">وبلاگ</a>
+          <a class="t-link d-block text-right ir-r smb-1" href="#"
+            >راهنمای خرید بلیط هواپیما</a
+          >
+          <a class="t-link d-block text-right ir-r smb-1" href="#"
+            >راهنمای رزرو هتل خارجی</a
+          >
+          <a class="t-link d-block text-right ir-r smb-1" href="#"
+            >سوالات متداول</a
+          >
+          <a class="t-link d-block text-right ir-r smb-1" href="#"
+            >قوانین و مقررات</a
+          >
+          <a class="t-link d-block text-right ir-r mb-0" href="#">حریم خصوصی</a>
+        </div>
+      </div>
+
+      <hr class="w-100 smy-5" />
+
+      <div
+        class="outro d-flex spy-3 spx-2 spx-lg-10 flex-column justify-content-between align-items-center w-100"
+      >
+        <img
+          class="d-block mx-auto smb-5"
+          src="/img/logo-footer.png"
+          width="150"
+          alt="دریوک"
+        />
+
+        <p class="d-block text-center fs-m ir-r c-dark smb-5">
+          آژانس گردشگری دریوک ؛ خرید و رزرو آنلاین بلیط هواپیما و هتل و تور
+          مسافرتی
+        </p>
+
+        <p class="d-block text-center fs-m ir-r c-grey smb-5">
+          تمامی كالاها و خدمات اين فروشگاه، حسب مورد دارای مجوزهای لازم از مراجع
+          مربوطه می‌باشند و فعاليت‌های اين سايت تابع قوانين و مقررات جمهوری
+          اسلامی ايران است کلیه حقوق مادی و معنوی این وبسایت و مطالب آن برای
+          دریوک محفوظ است.
+        </p>
+
+        <p class="d-block text-center fs-s ir-r c-grey smb-5">
+          Deryouk.com. All rights reserved
+        </p>
+
+        <div class="important-links d-flex justify-content-start smb-5">
+          <a
+            class="d-block spx-2 spy-3 text-decoration-none bg-white srounded-m sml-2"
+            href="#"
+          >
+            <img class="d-block w-100" src="/img/samandehi.png" alt="" />
+          </a>
+
+          <a
+            class="d-block spx-2 spy-3 text-decoration-none bg-white srounded-m"
+            href="#"
+          >
+            <img class="d-block w-100" src="/img/enamad.png" alt="" />
+          </a>
+        </div>
+
+        <div class="social d-flex justify-content-between align-items-center">
+          <a
+            href="#"
+            class="text-decoration-none s-link d-block sml-1 telegram"
+          ></a>
+          <a
+            href="#"
+            class="text-decoration-none s-link d-block sml-1 youtube"
+          ></a>
+          <a
+            href="#"
+            class="text-decoration-none s-link d-block sml-1 linkedin"
+          ></a>
+          <a
+            href="#"
+            class="text-decoration-none s-link d-block sml-1 facebook"
+          ></a>
+          <a
+            href="#"
+            class="text-decoration-none s-link d-block ml-0 twitter"
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/js/jquery-3.5.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/popper.min.js"></script>
+  </body>
+</html>

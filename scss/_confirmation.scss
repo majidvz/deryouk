@@ -1,0 +1,85 @@
+.confirmation {
+  .steps {
+    .s-item {
+      background: #f0f0f0;
+      height: 50px;
+      border-radius: 25px;
+      padding: 5px;
+      .num {
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        line-height: 40px;
+      }
+
+      .s-text {
+        color: #a6a6a6;
+      }
+
+      &.active {
+        background: #224396;
+        .num {
+          color: #224396 !important;
+        }
+
+        .s-text {
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  .warning {
+    border: 1px solid $warning;
+  }
+
+  .table-temp {
+    .header {
+      .icon {
+        width: 44px;
+        height: 44px;
+        border-radius: 17px;
+        box-shadow: 8px 21px 30px 0 #dfe7f447;
+      }
+
+      .texts {
+        width: calc(100% - 54px);
+      }
+    }
+
+    .content {
+      .title {
+        width: 40px;
+        height: 100%;
+        .t-text {
+          transform: rotate(90deg);
+          color: $primary;
+        }
+      }
+      .table-content {
+        border: 1px solid #dde2ee;
+        border-radius: 13px;
+      }
+
+      &:not(.requester) {
+        .table-content {
+          width: calc(100% - 40px);
+        }
+      }
+    }
+
+    &.ticket-info {
+      .icon {
+        background-size: 18px 17px !important;
+        background: url(/icon/ticket-info.png) no-repeat center, #fff;
+      }
+    }
+
+    &.requester {
+      .icon {
+        background-size: 15px 16px !important;
+        background: url(/icon/person.png) no-repeat center, #fff;
+      }
+    }
+  }
+}

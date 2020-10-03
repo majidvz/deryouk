@@ -1,0 +1,50 @@
+.g-footer {
+  .companies {
+    background: url(/img/companies.png) no-repeat center;
+    background-size: 100% auto !important;
+    height: 100px;
+  }
+
+  .tours {
+    h3 {
+      color: #202020;
+    }
+
+    .t-link {
+      text-decoration: none;
+      color: #a6a6a6;
+      transition: 0.3s;
+      &:hover {
+        color: #202020;
+      }
+    }
+  }
+
+  .social {
+    width: 240px;
+    .s-link {
+      width: 40px;
+      height: 40px;
+      background-size: 100% 100% !important;
+      &.telegram {
+        background: url(/icon/twitter.png) no-repeat center;
+      }
+
+      &.youtube {
+        background: url(/icon/youtube.png) no-repeat center;
+      }
+
+      &.linkedin {
+        background: url(/icon/linkedin.png) no-repeat center;
+      }
+
+      &.facebook {
+        background: url(/icon/facebook.png) no-repeat center;
+      }
+
+      &.twitter {
+        background: url(/icon/twitter.png) no-repeat center;
+      }
+    }
+  }
+}

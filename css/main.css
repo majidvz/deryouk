@@ -409,34 +409,95 @@ fieldset[disabled] .btn-primary.active {
   background-size: 17px 18px !important;
   background: url(/icon/passengers-info.png) no-repeat center, #fff;
 }
-.confirmation .tickets .origin {
+
+.tickets .origin {
   background: url(/icon/airplan.png) no-repeat center;
   background-size: 20px 17px !important;
 }
-.confirmation .tickets .info .i-content:first-child {
+.tickets .info .i-content:first-child {
   border-radius: 0 13px 13px 0;
   border: 1px solid #dde2ee;
 }
-.confirmation .tickets .info .i-content:last-child {
+.tickets .info .i-content:last-child {
   border-radius: 13px 0 0 13px;
   border: 1px solid #dde2ee;
   border-right: none;
 }
-.confirmation .tickets .price {
+.tickets .price {
   font-size: 2em;
+}
+.tickets .empty {
+  border: 1px dashed #989eb4;
 }
 
 @media only screen and (max-width: 991.99px) {
-  .confirmation .tickets > .t-content {
+  .tickets > .t-content {
     padding-right: 0;
     padding-left: 0;
   }
 }
 @media only screen and (min-width: 992px) {
-  .confirmation .tickets > .t-content:first-child {
+  .tickets > .t-content:first-child {
     padding-right: 0;
   }
-  .confirmation .tickets > .t-content:last-child {
+  .tickets > .t-content:last-child {
+    padding-left: 0;
+  }
+}
+.result .notification .title {
+  height: 40px;
+  line-height: 40px;
+  background: url(/icon/notification.png) no-repeat right center;
+  background-size: 16px 19px !important;
+  padding-right: 26px;
+}
+.result .notification .toggle {
+  width: 55px;
+  height: 30px;
+  background: #f4f5fa;
+  border-radius: 15px;
+}
+.result .notification .toggle::after {
+  content: "";
+  transition: 0.3s;
+  position: absolute;
+  top: 5px;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background: #fff;
+}
+.result .notification .toggle:not(.active)::after {
+  right: 5px;
+}
+.result .notification .toggle.active {
+  background: #244497;
+}
+.result .notification .toggle.active::after {
+  right: 30px;
+}
+.result .navigation .nav-pills .nav-item {
+  width: 33.33%;
+}
+.result .navigation .nav-pills .nav-link {
+  background: #fff !important;
+}
+.result .navigation .nav-pills .nav-link.active {
+  color: #fcb803 !important;
+  border-bottom: 2px solid #fcb803;
+}
+
+@media only screen and (max-width: 991.99px) {
+  .result .aside {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .result .r-content > .aside:first-child {
+    padding-right: 0;
+  }
+  .result .r-content > .aside:last-child {
     padding-left: 0;
   }
 }

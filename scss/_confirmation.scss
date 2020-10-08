@@ -1,4 +1,5 @@
-.confirmation {
+.confirmation,
+.result {
   .steps {
     .s-item {
       background: #f0f0f0;
@@ -79,6 +80,39 @@
       .icon {
         background-size: 15px 16px !important;
         background: url(/icon/person.png) no-repeat center, #fff;
+      }
+    }
+
+    &.airplane-result {
+      .icon {
+        background-size: 15px 15px !important;
+        background: url(/icon/airplane-result.png) no-repeat center, #fff;
+      }
+
+      .days {
+        .date {
+          color: #8892aa !important;
+          padding: 10px;
+          background: #f2f6ff;
+          border-radius: 10px 10px 0 10px;
+        }
+
+        &.active {
+          background: #f6fff8 !important;
+          .price {
+            color: #59bc6f !important;
+          }
+          .date {
+            color: #fff !important;
+            background: #59bc6f !important;
+          }
+        }
+      }
+
+      .days-btn {
+        cursor: pointer;
+        background: url(/icon/prev.png) no-repeat center;
+        background-size: 10px 17px !important;
       }
     }
 

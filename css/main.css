@@ -346,66 +346,113 @@ fieldset[disabled] .btn-primary.active {
     border-left: 1px solid #dde2ee;
   }
 }
-.confirmation .steps .s-item {
+.confirmation .steps .s-item,
+.result .steps .s-item {
   background: #f0f0f0;
   height: 50px;
   border-radius: 25px;
   padding: 5px;
 }
-.confirmation .steps .s-item .num {
+.confirmation .steps .s-item .num,
+.result .steps .s-item .num {
   width: 40px;
   height: 40px;
   border-radius: 100%;
   line-height: 40px;
 }
-.confirmation .steps .s-item .s-text {
+.confirmation .steps .s-item .s-text,
+.result .steps .s-item .s-text {
   color: #a6a6a6;
 }
-.confirmation .steps .s-item.active {
+.confirmation .steps .s-item.active,
+.result .steps .s-item.active {
   background: #224396;
 }
-.confirmation .steps .s-item.active .num {
+.confirmation .steps .s-item.active .num,
+.result .steps .s-item.active .num {
   color: #224396 !important;
 }
-.confirmation .steps .s-item.active .s-text {
+.confirmation .steps .s-item.active .s-text,
+.result .steps .s-item.active .s-text {
   color: #fff;
 }
-.confirmation .warning {
+.confirmation .warning,
+.result .warning {
   border: 1px solid #fcb803;
 }
-.confirmation .table-temp .header .icon {
+.confirmation .table-temp .header .icon,
+.result .table-temp .header .icon {
   width: 44px;
   height: 44px;
   border-radius: 17px;
   box-shadow: 8px 21px 30px 0 #dfe7f447;
 }
-.confirmation .table-temp .header .texts {
+.confirmation .table-temp .header .texts,
+.result .table-temp .header .texts {
   width: calc(100% - 54px);
 }
-.confirmation .table-temp .content .title {
+.confirmation .table-temp .content .title,
+.result .table-temp .content .title {
   width: 40px;
   height: 100%;
 }
-.confirmation .table-temp .content .title .t-text {
+.confirmation .table-temp .content .title .t-text,
+.result .table-temp .content .title .t-text {
   transform: rotate(90deg);
   color: #244497;
 }
-.confirmation .table-temp .content .table-content {
+.confirmation .table-temp .content .table-content,
+.result .table-temp .content .table-content {
   border: 1px solid #dde2ee;
   border-radius: 13px;
 }
-.confirmation .table-temp .content:not(.requester) .table-content {
+.confirmation .table-temp .content:not(.requester) .table-content,
+.result .table-temp .content:not(.requester) .table-content {
   width: calc(100% - 40px);
 }
-.confirmation .table-temp.ticket-info .icon {
+.confirmation .table-temp.ticket-info .icon,
+.result .table-temp.ticket-info .icon {
   background-size: 18px 17px !important;
   background: url(/icon/ticket-info.png) no-repeat center, #fff;
 }
-.confirmation .table-temp.requester .icon {
+.confirmation .table-temp.requester .icon,
+.result .table-temp.requester .icon {
   background-size: 15px 16px !important;
   background: url(/icon/person.png) no-repeat center, #fff;
 }
-.confirmation .table-temp.passengers-info .icon {
+.confirmation .table-temp.airplane-result .icon,
+.result .table-temp.airplane-result .icon {
+  background-size: 15px 15px !important;
+  background: url(/icon/airplane-result.png) no-repeat center, #fff;
+}
+.confirmation .table-temp.airplane-result .days .date,
+.result .table-temp.airplane-result .days .date {
+  color: #8892aa !important;
+  padding: 10px;
+  background: #f2f6ff;
+  border-radius: 10px 10px 0 10px;
+}
+.confirmation .table-temp.airplane-result .days.active,
+.result .table-temp.airplane-result .days.active {
+  background: #f6fff8 !important;
+}
+.confirmation .table-temp.airplane-result .days.active .price,
+.result .table-temp.airplane-result .days.active .price {
+  color: #59bc6f !important;
+}
+.confirmation .table-temp.airplane-result .days.active .date,
+.result .table-temp.airplane-result .days.active .date {
+  color: #fff !important;
+  background: #59bc6f !important;
+}
+.confirmation .table-temp.airplane-result .days-btn,
+.result .table-temp.airplane-result .days-btn {
+  cursor: pointer;
+  background: url(/icon/prev.png) no-repeat center;
+  background-size: 10px 17px !important;
+}
+.confirmation .table-temp.passengers-info .icon,
+.result .table-temp.passengers-info .icon {
   background-size: 17px 18px !important;
   background: url(/icon/passengers-info.png) no-repeat center, #fff;
 }
@@ -485,6 +532,61 @@ fieldset[disabled] .btn-primary.active {
 .result .navigation .nav-pills .nav-link.active {
   color: #fcb803 !important;
   border-bottom: 2px solid #fcb803;
+}
+.result .offered-ticket {
+  padding-top: 40px !important;
+  padding-bottom: 40px !important;
+  padding-right: 35px !important;
+  position: relative;
+}
+.result .offered-ticket .time > span {
+  color: #f42b43 !important;
+}
+.result .offered-ticket .dots {
+  height: 20px;
+  background: url(/img/offered-bg.png) no-repeat center;
+  background-size: 100% auto !important;
+}
+.result .offered-ticket .dots .status {
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 0.8em;
+  background: #a6a6a6;
+}
+.result .offered-ticket .price {
+  background: #f2f6ff;
+  color: #2449a0;
+  padding: 5px 10px;
+  font-size: 0.96em;
+  border-radius: 15px 15px 0 15px;
+}
+.result .offered-ticket::after {
+  content: "";
+  position: absolute;
+  width: 36px;
+  height: 93px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -8px;
+  background: url(/img/offer-label.png) no-repeat center;
+  background-size: 100% 100% !important;
+}
+.result .restitution {
+  color: #f74167 !important;
+  background: url(/icon/toggle.png) no-repeat left center;
+  background-size: 20px 20px !important;
+  padding-left: 30px;
+}
+.result .pagination-btn {
+  width: 40px;
+  height: 40px;
+  background-size: auto 50% !important;
+}
+.result .pagination-btn.next {
+  background: url(/icon/next.png) no-repeat center;
+}
+.result .pagination-btn.prev {
+  background: url(/icon/prev.png) no-repeat center;
 }
 
 @media only screen and (max-width: 991.99px) {

@@ -44,13 +44,74 @@
       }
       .nav-link {
         background: #fff !important;
-        &:not(.active) {
-        }
         &.active {
           color: $warning !important;
           border-bottom: 2px solid $warning;
         }
       }
+    }
+  }
+
+  .offered-ticket {
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+    padding-right: 35px !important;
+    position: relative;
+    .time > span {
+      color: #f42b43 !important;
+    }
+
+    .dots {
+      height: 20px;
+      background: url(/img/offered-bg.png) no-repeat center;
+      background-size: 100% auto !important;
+
+      .status {
+        padding: 5px 10px;
+        border-radius: 10px;
+        font-size: 0.8em;
+        background: #a6a6a6;
+      }
+    }
+
+    .price {
+      background: #f2f6ff;
+      color: #2449a0;
+      padding: 5px 10px;
+      font-size: 0.96em;
+      border-radius: 15px 15px 0 15px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 36px;
+      height: 93px;
+      top: 50%;
+      transform: translateY(-50%);
+      right: -8px;
+      background: url(/img/offer-label.png) no-repeat center;
+      background-size: 100% 100% !important;
+    }
+  }
+
+  .restitution {
+    color: #f74167 !important;
+    background: url(/icon/toggle.png) no-repeat left center;
+    background-size: 20px 20px !important;
+    padding-left: 30px;
+  }
+
+  .pagination-btn {
+    width: 40px;
+    height: 40px;
+    background-size: auto 50% !important;
+    &.next {
+      background: url(/icon/next.png) no-repeat center;
+    }
+
+    &.prev {
+      background: url(/icon/prev.png) no-repeat center;
     }
   }
 }

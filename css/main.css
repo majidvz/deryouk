@@ -577,6 +577,11 @@ fieldset[disabled] .btn-primary.active {
   background-size: 20px 20px !important;
   padding-left: 30px;
 }
+.result .c-restitution .percent {
+  background: #fddadf;
+  color: #f74167;
+  border-radius: 20px 20px 0 20px !important;
+}
 .result .pagination-btn {
   width: 40px;
   height: 40px;

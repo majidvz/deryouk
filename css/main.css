@@ -345,6 +345,12 @@ fieldset[disabled] .btn-primary.active {
   .g-intro .border-left {
     border-left: 1px solid #dde2ee;
   }
+
+  .g-intro .header .nav-link,
+  .g-intro .header .phone,
+  .g-intro .header .btn-warning{
+    font-size:.9em;
+  }
 }
 .confirmation .steps .s-item,
 .result .steps .s-item {
@@ -595,6 +601,26 @@ fieldset[disabled] .btn-primary.active {
 }
 
 @media only screen and (max-width: 991.99px) {
+  .result .ticket-date,.result .ticket-hour{
+    font-size:.8em;
+  }
+
+  .result .origin{
+    position: relative;
+  }
+
+  .result .origin::after{
+    content:"";
+    position: absolute;
+    top:50%;
+    width:19px;
+    height:17px;
+    background:url(/icon/carter-short.png) no-repeat center;
+    background-size:100% 100% !important;
+    transform:translateY(-50%);
+    right:-9.5px;
+  }
+
   .result .aside {
     padding-right: 0;
     padding-left: 0;
@@ -647,5 +673,3 @@ fieldset[disabled] .btn-primary.active {
 .g-footer .social .s-link.twitter {
   background: url(/icon/twitter.png) no-repeat center;
 }
-
-/*# sourceMappingURL=main.css.map */
